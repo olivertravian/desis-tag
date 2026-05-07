@@ -1,8 +1,10 @@
 {
   "name": "desis-tag",
   "displayName": "desis_tag",
+  "publisher": "oliverchacon",
+  "icon": "icono.png",
   "description": "Extension de tags DESIS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
