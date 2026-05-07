@@ -11,4 +11,4 @@ Extension para insertar tags DESIS rapidamente.
 
 ## Estandar
 
-Aclaración, esta forma de poner tags no es un estandar, solo es una forma de ayudar c:
+Aclaracion, esta forma de poner tags no es un estandar, solo es una forma de ayudar c:
