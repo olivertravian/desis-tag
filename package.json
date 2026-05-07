@@ -1,0 +1,73 @@
+{
+  "name": "desis-tag",
+  "displayName": "desis_tag",
+  "description": "Extension de tags DESIS",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:desis-tag.tagHTML",
+    "onCommand:desis-tag.tagPHP",
+    "onCommand:desis-tag.tagCSS",
+    "onCommand:desis-tag.tagJS",
+    "onCommand:desis-tag.tagSQL"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "desis-tag.tagHTML",
+        "title": "Tag HTML"
+      },
+      {
+        "command": "desis-tag.tagPHP",
+        "title": "Tag PHP"
+      },
+      {
+        "command": "desis-tag.tagCSS",
+        "title": "Tag CSS"
+      },
+      {
+        "command": "desis-tag.tagJS",
+        "title": "Tag JS"
+      },
+      {
+        "command": "desis-tag.tagSQL",
+        "title": "Tag SQL"
+      }
+    ],
+    "configuration": {
+      "title": "Desis Tag",
+      "properties": {
+        "desis-tag.nombre": {
+          "type": "string",
+          "default": "OLIVER CHACON",
+          "description": "Nombre del desarrollador"
+        },
+        "desis-tag.requerimiento": {
+            "type": "number",
+            "default": "14200",
+            "minimum": 1,
+            "description": "Folio del requerimiento"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
